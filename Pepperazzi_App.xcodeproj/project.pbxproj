@@ -15,6 +15,9 @@
 		C771B8B51F44458C00DD65C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C771B8B31F44458C00DD65C6 /* LaunchScreen.storyboard */; };
 		C771B8C01F44458C00DD65C6 /* Pepperazzi_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B8BF1F44458C00DD65C6 /* Pepperazzi_AppTests.m */; };
 		C771B8CB1F44458C00DD65C6 /* Pepperazzi_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B8CA1F44458C00DD65C6 /* Pepperazzi_AppUITests.m */; };
+		C771B8DA1F445D2A00DD65C6 /* TypeCuisineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B8D91F445D2A00DD65C6 /* TypeCuisineViewController.m */; };
+		C771B8DD1F445D5A00DD65C6 /* SubTypeCuisineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B8DC1F445D5A00DD65C6 /* SubTypeCuisineViewController.m */; };
+		C771B8DF1F446F0A00DD65C6 /* images in Resources */ = {isa = PBXBuildFile; fileRef = C771B8DE1F446F0A00DD65C6 /* images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		C771B8C61F44458C00DD65C6 /* Pepperazzi_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pepperazzi_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C771B8CA1F44458C00DD65C6 /* Pepperazzi_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pepperazzi_AppUITests.m; sourceTree = "<group>"; };
 		C771B8CC1F44458C00DD65C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C771B8D81F445D2A00DD65C6 /* TypeCuisineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypeCuisineViewController.h; path = ../TypeCuisineViewController.h; sourceTree = "<group>"; };
+		C771B8D91F445D2A00DD65C6 /* TypeCuisineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TypeCuisineViewController.m; path = ../TypeCuisineViewController.m; sourceTree = "<group>"; };
+		C771B8DB1F445D5A00DD65C6 /* SubTypeCuisineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubTypeCuisineViewController.h; path = ../SubTypeCuisineViewController.h; sourceTree = "<group>"; };
+		C771B8DC1F445D5A00DD65C6 /* SubTypeCuisineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubTypeCuisineViewController.m; path = ../SubTypeCuisineViewController.m; sourceTree = "<group>"; };
+		C771B8DE1F446F0A00DD65C6 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		C771B8991F44458C00DD65C6 = {
 			isa = PBXGroup;
 			children = (
+				C771B8DE1F446F0A00DD65C6 /* images */,
 				C771B8A41F44458C00DD65C6 /* Pepperazzi_App */,
 				C771B8BE1F44458C00DD65C6 /* Pepperazzi_AppTests */,
 				C771B8C91F44458C00DD65C6 /* Pepperazzi_AppUITests */,
@@ -117,6 +126,10 @@
 		C771B8A51F44458C00DD65C6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C771B8D81F445D2A00DD65C6 /* TypeCuisineViewController.h */,
+				C771B8D91F445D2A00DD65C6 /* TypeCuisineViewController.m */,
+				C771B8DB1F445D5A00DD65C6 /* SubTypeCuisineViewController.h */,
+				C771B8DC1F445D5A00DD65C6 /* SubTypeCuisineViewController.m */,
 				C771B8A61F44458C00DD65C6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -246,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C771B8DF1F446F0A00DD65C6 /* images in Resources */,
 				C771B8B51F44458C00DD65C6 /* LaunchScreen.storyboard in Resources */,
 				C771B8B21F44458C00DD65C6 /* Assets.xcassets in Resources */,
 				C771B8B01F44458C00DD65C6 /* Main.storyboard in Resources */,
@@ -273,9 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C771B8DD1F445D5A00DD65C6 /* SubTypeCuisineViewController.m in Sources */,
 				C771B8AD1F44458C00DD65C6 /* ViewController.m in Sources */,
 				C771B8AA1F44458C00DD65C6 /* AppDelegate.m in Sources */,
 				C771B8A71F44458C00DD65C6 /* main.m in Sources */,
+				C771B8DA1F445D2A00DD65C6 /* TypeCuisineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
