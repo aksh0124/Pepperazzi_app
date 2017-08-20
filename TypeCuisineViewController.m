@@ -20,7 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [ self buttonpressed:nil];
+    [self.mexicanbtn  setTitle:@"Mexican" forState:UIControlStateNormal];
+    [self.westernbtn  setTitle:@"Western" forState:UIControlStateNormal];
     
     // Do any additional setup after loading the view.
 }
@@ -33,18 +34,44 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)buttonpressed:(id)sender
+-(IBAction)mexicanpressed:(id)sender
 {
-    if([_italianbtn isSelected])
-    {
-        [_soupbtn setUserInteractionEnabled:NO];
-        [_saladbtn setUserInteractionEnabled:NO];
-    }
-    else if ([_westernbtn isSelected])
-    {
-        [_starterbtn setEnabled:NO];
-        [_maincoursebtn setEnabled:NO];
-    }
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    JSONTableViewController *jtvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"TableView1"];
+    
+    jtvc.tablename = self.mexicanbtn.titleLabel.text;
+    NSLog(@"%@", jtvc.tablename);
+    [self presentViewController:jtvc animated:YES completion:nil];
+}
+
+-(IBAction)italianpressed:(id)sender
+{
+    
+}
+
+-(IBAction)westernpressed:(id)sender
+{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    JSONTableViewController *jtvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"TableView1"];
+    
+    jtvc.tablename = self.westernbtn.titleLabel.text;
+    NSLog(@"%@", jtvc.tablename);
+    [self presentViewController:jtvc animated:YES completion:nil];
+}
+
+-(IBAction)indianpressed:(id)sender
+{
+    
+}
+
+-(IBAction)panasianpressed:(id)sender
+{
+    
+}
+
+-(IBAction)lebanonpressed:(id)sender
+{
+    
 }
 
 

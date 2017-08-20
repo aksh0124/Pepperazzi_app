@@ -10,9 +10,7 @@
 #import "TypeCuisineViewController.h"
 
 @interface SubTypeCuisineViewController ()
-{
-    UIButton *button;
-}
+
 
 @end
 
@@ -22,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    TypeCuisineViewController *tvc;
+     [self.soupbtn  setTitle:@"Soup" forState:UIControlStateNormal];
     
     
 }
@@ -31,6 +29,29 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(IBAction)souppressed:(id)sender
+{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    JSONTableViewController *jtvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"TableView1"];
+    
+    jtvc.categoryname = self.soupbtn.titleLabel.text;
+    NSLog(@"%@", jtvc.categoryname);
+    [self presentViewController:jtvc animated:YES completion:nil];
+}
+-(IBAction)saladpressed:(id)sender
+{
+    
+}
+-(IBAction)starterpressed:(id)sender
+{
+    
+}
+-(IBAction)maincoursepressed:(id)sender
+{
+    
+}
+
 
 /*
 #pragma mark - Navigation

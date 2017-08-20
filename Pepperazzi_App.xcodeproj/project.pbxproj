@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70B7AB61F485B130098590F /* JSONTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C70B7AB51F485B130098590F /* JSONTableViewController.m */; };
 		C771B8A71F44458C00DD65C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B8A61F44458C00DD65C6 /* main.m */; };
 		C771B8AA1F44458C00DD65C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B8A91F44458C00DD65C6 /* AppDelegate.m */; };
 		C771B8AD1F44458C00DD65C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B8AC1F44458C00DD65C6 /* ViewController.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C70B7AB41F485B130098590F /* JSONTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONTableViewController.h; path = ../JSONTableViewController.h; sourceTree = "<group>"; };
+		C70B7AB51F485B130098590F /* JSONTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONTableViewController.m; path = ../JSONTableViewController.m; sourceTree = "<group>"; };
 		C771B8A21F44458C00DD65C6 /* Pepperazzi_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pepperazzi_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C771B8A61F44458C00DD65C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C771B8A81F44458C00DD65C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				C771B8D91F445D2A00DD65C6 /* TypeCuisineViewController.m */,
 				C771B8DB1F445D5A00DD65C6 /* SubTypeCuisineViewController.h */,
 				C771B8DC1F445D5A00DD65C6 /* SubTypeCuisineViewController.m */,
+				C70B7AB41F485B130098590F /* JSONTableViewController.h */,
+				C70B7AB51F485B130098590F /* JSONTableViewController.m */,
 				C771B8A61F44458C00DD65C6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -290,6 +295,7 @@
 				C771B8DD1F445D5A00DD65C6 /* SubTypeCuisineViewController.m in Sources */,
 				C771B8AD1F44458C00DD65C6 /* ViewController.m in Sources */,
 				C771B8AA1F44458C00DD65C6 /* AppDelegate.m in Sources */,
+				C70B7AB61F485B130098590F /* JSONTableViewController.m in Sources */,
 				C771B8A71F44458C00DD65C6 /* main.m in Sources */,
 				C771B8DA1F445D2A00DD65C6 /* TypeCuisineViewController.m in Sources */,
 			);
@@ -527,6 +533,7 @@
 				C771B8D11F44458C00DD65C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C771B8D21F44458C00DD65C6 /* Build configuration list for PBXNativeTarget "Pepperazzi_AppTests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +542,7 @@
 				C771B8D41F44458C00DD65C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C771B8D51F44458C00DD65C6 /* Build configuration list for PBXNativeTarget "Pepperazzi_AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +551,7 @@
 				C771B8D71F44458C00DD65C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

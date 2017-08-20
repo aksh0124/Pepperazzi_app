@@ -10,5 +10,14 @@
 
 @interface SubTypeCuisineViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *soupbtn;
+@property (strong, nonatomic) IBOutlet UIButton *saladbtn;
+@property (strong, nonatomic) IBOutlet UIButton *starterbtn;
+@property (strong, nonatomic) IBOutlet UIButton *maincoursebtn;
+
+-(IBAction)souppressed:(id)sender;
+-(IBAction)saladpressed:(id)sender;
+-(IBAction)starterpressed:(id)sender;
+-(IBAction)maincoursepressed:(id)sender;
 
 @end
