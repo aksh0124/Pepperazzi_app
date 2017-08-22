@@ -42,7 +42,7 @@
     jtvc.cuisinename =  _cuisinename1;
     jtvc.categoryname = self.soupbtn.titleLabel.text;
     NSLog(@"%@", jtvc.categoryname);
-   [self presentViewController:jtvc animated:NO completion:nil];
+   [self presentViewController:jtvc animated:YES completion:nil];
 }
 -(IBAction)saladpressed:(id)sender
 {
