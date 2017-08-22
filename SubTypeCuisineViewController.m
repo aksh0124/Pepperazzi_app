@@ -37,27 +37,57 @@
 -(IBAction)souppressed:(id)sender
 {
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
- jtvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"tableview1"];
-   //  jtvc.cuisinename = tvc.westernbtn.titleLabel.text;
+    jtvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"tableview1"];
+
     jtvc.cuisinename =  _cuisinename1;
     jtvc.categoryname = self.soupbtn.titleLabel.text;
     NSLog(@"%@", jtvc.categoryname);
-   [self presentViewController:jtvc animated:YES completion:nil];
+    NSLog(@"%@", jtvc.cuisinename);
+ //   [self presentViewController:jtvc animated:YES completion:nil];
+ 
 }
 -(IBAction)saladpressed:(id)sender
 {
+  UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    jtvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"tableview1"];
     
+    jtvc.cuisinename =  _cuisinename1;
+    jtvc.categoryname = self.saladbtn.titleLabel.text;
+    NSLog(@"%@", jtvc.categoryname);
+
 }
 -(IBAction)starterpressed:(id)sender
 {
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    jtvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"tableview1"];
     
+    jtvc.cuisinename =  _cuisinename1;
+    jtvc.categoryname = self.starterbtn.titleLabel.text;
+    NSLog(@"%@", jtvc.categoryname);
 }
 -(IBAction)maincoursepressed:(id)sender
 {
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    jtvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"tableview1"];
     
+    jtvc.cuisinename =  _cuisinename1;
+    jtvc.categoryname = self.maincoursebtn.titleLabel.text;
+    NSLog(@"%@", jtvc.categoryname);
+
 }
-
-
+/*
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"soup_segue"])
+    {
+        jtvc = [segue destinationViewController];
+     //   jtvc.cuisinename1 = self.mexicanbtn.titleLabel.text;
+          jtvc.cuisinename =  _cuisinename1;
+        jtvc.categoryname = self.soupbtn.titleLabel.text;
+        NSLog(@"%@", jtvc.cuisinename);
+         NSLog(@"%@", jtvc.categoryname);
+    }
+}*/
 /*
 #pragma mark - Navigation
 

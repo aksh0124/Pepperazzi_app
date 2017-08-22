@@ -19,11 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-  /*  TypeCuisineViewController *tcvc;
+    TypeCuisineViewController *tcvc;
     SubTypeCuisineViewController *stcvc;
     
-    tcvc.westernbtn = cuisinename;
+  /*  tcvc.westernbtn = cuisinename;
     stcvc.soupbtn = categoryname; */
+    
+    cuisinename = stcvc.cuisinename1;
+    
+    
+    NSLog(@"%@",cuisinename);
+    NSLog(@"%@",categoryname);
     
     NSError *error;
     NSString *url_string = [NSString stringWithFormat:@"http://anantsoftcomputing.com/pepperazzi_app/disheslist.php?format=json&cuisinename=%@&categoryname=%@",cuisinename,categoryname];

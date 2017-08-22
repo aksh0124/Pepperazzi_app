@@ -36,12 +36,7 @@
 
 -(IBAction)mexicanpressed:(id)sender
 {
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    stcvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"subtypecuisine"];
-    
-    stcvc.cuisinename1 = self.mexicanbtn.titleLabel.text;
-    NSLog(@"%@", stcvc.cuisinename1);
-    [self presentViewController:stcvc animated:YES completion:nil];
+   
 }
 
 -(IBAction)italianpressed:(id)sender
@@ -51,12 +46,15 @@
 
 -(IBAction)westernpressed:(id)sender
 {
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+   /* UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     stcvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"subtypecuisine"];
     
     stcvc.cuisinename1 = self.westernbtn.titleLabel.text;
     NSLog(@"%@", stcvc.cuisinename1);
-    [self presentViewController:stcvc animated:YES completion:nil];
+    [self presentViewController:stcvc animated:YES completion:nil];*/
+    
+      stcvc.cuisinename1 = self.westernbtn.titleLabel.text;
+    
 }
 
 -(IBAction)indianpressed:(id)sender
@@ -79,26 +77,38 @@
     if ([[segue identifier] isEqualToString:@"mexican_segue"])
     {
         stcvc = [segue destinationViewController];
+        stcvc.cuisinename1 = self.mexicanbtn.titleLabel.text;
+        NSLog(@"%@", stcvc.cuisinename1);
     }
     if ([[segue identifier] isEqualToString:@"italian_segue"])
     {
         stcvc = [segue destinationViewController];
+        stcvc.cuisinename1 = self.italianbtn.titleLabel.text;
+        NSLog(@"%@", stcvc.cuisinename1);
     }
     if ([[segue identifier] isEqualToString:@"western_segue"])
     {
         stcvc = [segue destinationViewController];
+        stcvc.cuisinename1 = self.westernbtn.titleLabel.text;
+        NSLog(@"%@", stcvc.cuisinename1);
     }
     if ([[segue identifier] isEqualToString:@"indian_segue"])
     {
         stcvc = [segue destinationViewController];
+        stcvc.cuisinename1 = self.indianbtn.titleLabel.text;
+        NSLog(@"%@", stcvc.cuisinename1);
     }
     if ([[segue identifier] isEqualToString:@"panasian_segue"])
     {
         stcvc = [segue destinationViewController];
+        stcvc.cuisinename1 = self.panasianbtn.titleLabel.text;
+        NSLog(@"%@", stcvc.cuisinename1);
     }
     if ([[segue identifier] isEqualToString:@"lebanon_segue"])
     {
         stcvc = [segue destinationViewController];
+        stcvc.cuisinename1 = self.lebanonbtn.titleLabel.text;
+        NSLog(@"%@", stcvc.cuisinename1);
     }
 }
 
