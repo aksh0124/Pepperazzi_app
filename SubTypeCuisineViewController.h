@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSONTableViewController.h"
 
 @interface SubTypeCuisineViewController : UIViewController
 
@@ -19,5 +20,7 @@
 -(IBAction)saladpressed:(id)sender;
 -(IBAction)starterpressed:(id)sender;
 -(IBAction)maincoursepressed:(id)sender;
+
+@property NSString *cuisinename1;
 
 @end

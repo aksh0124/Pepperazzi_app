@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ju9-fh-4V8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Qd3-Xb-Bac">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -508,7 +508,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="510.15625" y="133.0078125"/>
+            <point key="canvasLocation" x="1275.78125" y="133.0078125"/>
         </scene>
         <!--Type Cuisine View Controller-->
         <scene sceneID="mgo-0u-8Fq">
@@ -531,7 +531,8 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bkP-CG-D1x" kind="show" id="xw5-Io-JpL"/>
+                                    <action selector="mexicanpressed:" destination="yHe-2Q-eQV" eventType="touchUpInside" id="8Yv-F1-ree"/>
+                                    <segue destination="bkP-CG-D1x" kind="show" identifier="mexican_segue" id="xw5-Io-JpL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZJ-sO-zp0">
@@ -543,7 +544,8 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bkP-CG-D1x" kind="show" id="FSz-1T-q0J"/>
+                                    <action selector="italianpressed:" destination="yHe-2Q-eQV" eventType="touchUpInside" id="lT5-Tu-tDo"/>
+                                    <segue destination="bkP-CG-D1x" kind="show" identifier="italian_segue" id="FSz-1T-q0J"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2C-xI-Xyn">
@@ -555,7 +557,8 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bkP-CG-D1x" kind="show" id="SeY-zr-4qL"/>
+                                    <action selector="westernpressed:" destination="yHe-2Q-eQV" eventType="touchUpInside" id="hJM-z6-lia"/>
+                                    <segue destination="bkP-CG-D1x" kind="show" identifier="western_segue" id="SeY-zr-4qL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jY0-9C-3Yw">
@@ -567,7 +570,8 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bkP-CG-D1x" kind="show" id="dWi-Zh-2cw"/>
+                                    <action selector="indianpressed:" destination="yHe-2Q-eQV" eventType="touchUpInside" id="8y4-yG-FLR"/>
+                                    <segue destination="bkP-CG-D1x" kind="show" identifier="indian_segue" id="dWi-Zh-2cw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPp-M2-WBR">
@@ -579,7 +583,8 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bkP-CG-D1x" kind="show" id="mqi-1c-Vnd"/>
+                                    <action selector="panasianpressed:" destination="yHe-2Q-eQV" eventType="touchUpInside" id="nSa-Xe-ZOp"/>
+                                    <segue destination="bkP-CG-D1x" kind="show" identifier="panasian_segue" id="mqi-1c-Vnd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIj-ne-lc8">
@@ -591,7 +596,8 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bkP-CG-D1x" kind="show" id="oPf-BM-7X9"/>
+                                    <action selector="lebanonpressed:" destination="yHe-2Q-eQV" eventType="touchUpInside" id="xfs-oZ-Fax"/>
+                                    <segue destination="bkP-CG-D1x" kind="show" identifier="lebanon_segue" id="oPf-BM-7X9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -608,12 +614,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="39X-hj-raA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1176" y="133"/>
+            <point key="canvasLocation" x="1941.40625" y="132.421875"/>
         </scene>
         <!--Sub Type Cuisine View Controller-->
         <scene sceneID="roS-nB-8m8">
             <objects>
-                <viewController id="bkP-CG-D1x" customClass="SubTypeCuisineViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="subtypecuisine" id="bkP-CG-D1x" customClass="SubTypeCuisineViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5ZX-vX-TEA"/>
                         <viewControllerLayoutGuide type="bottom" id="KgK-eu-boE"/>
@@ -631,7 +637,8 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Lps-W8-DNQ" kind="show" id="ohy-bI-MDF"/>
+                                    <action selector="souppressed:" destination="bkP-CG-D1x" eventType="touchUpInside" id="3vH-Za-kNv"/>
+                                    <segue destination="Lps-W8-DNQ" kind="show" identifier="soup_segue" id="ohy-bI-MDF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWg-s5-swW">
@@ -643,7 +650,8 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Lps-W8-DNQ" kind="show" id="gR7-dm-q6w"/>
+                                    <action selector="saladpressed:" destination="bkP-CG-D1x" eventType="touchUpInside" id="Ose-7w-bsn"/>
+                                    <segue destination="Lps-W8-DNQ" kind="show" identifier="salad_segue" id="gR7-dm-q6w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnp-EW-p3v">
@@ -651,11 +659,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.91102295850000004" green="1" blue="0.76482346320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Starters">
+                                <state key="normal" title="Starter">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Lps-W8-DNQ" kind="show" id="9fs-XI-iUp"/>
+                                    <action selector="starterpressed:" destination="bkP-CG-D1x" eventType="touchUpInside" id="vT0-k5-8ES"/>
+                                    <segue destination="Lps-W8-DNQ" kind="show" identifier="starter_segue" id="9fs-XI-iUp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPr-zn-iM0">
@@ -667,7 +676,8 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Lps-W8-DNQ" kind="show" id="z5O-2Y-1qZ"/>
+                                    <action selector="maincoursepressed:" destination="bkP-CG-D1x" eventType="touchUpInside" id="xyV-hY-I56"/>
+                                    <segue destination="Lps-W8-DNQ" kind="show" identifier="maincourse_segue" id="z5O-2Y-1qZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -682,7 +692,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBE-YO-B1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1895" y="133"/>
+            <point key="canvasLocation" x="2660.15625" y="132.421875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OrR-y3-etR">
@@ -713,12 +723,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mYi-KV-L3Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3302" y="480"/>
+            <point key="canvasLocation" x="4067.1875" y="479.88281249999994"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="PcU-hx-jhi">
             <objects>
-                <viewController id="aWX-qD-8Gh" customClass="JSONTableViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tableview1" id="aWX-qD-8Gh" customClass="JSONTableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DCd-mm-ZRz"/>
                         <viewControllerLayoutGuide type="bottom" id="Ee4-cr-pkR"/>
@@ -752,7 +762,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7KT-Yw-tyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3301.5625" y="-178.125"/>
+            <point key="canvasLocation" x="4067.1875" y="-178.125"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="moW-xX-QNv">
@@ -770,25 +780,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qU5-uG-FCA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2608" y="132"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Dkh-tB-gfh">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ju9-fh-4V8" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0by-XW-ly1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UaV-lz-OaH"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o4q-mM-evA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-255.46875" y="133.0078125"/>
+            <point key="canvasLocation" x="3373.4375" y="131.8359375"/>
         </scene>
         <!--Type Cuisine View Controller-->
         <scene sceneID="vcm-Bh-gQW">
@@ -1010,14 +1002,32 @@
             </objects>
             <point key="canvasLocation" x="2330" y="-824"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lOJ-NK-p3s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qd3-Xb-Bac" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k56-aJ-zPb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ugg-hB-DhJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DdP-iH-lca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510.15625" y="133.0078125"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Image-non-veg" width="25" height="25"/>
         <image name="Image-veg" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DDQ-0f-i5R"/>
-        <segue reference="xw5-Io-JpL"/>
         <segue reference="z5O-2Y-1qZ"/>
+        <segue reference="FSz-1T-q0J"/>
+        <segue reference="DDQ-0f-i5R"/>
     </inferredMetricsTieBreakers>
 </document>

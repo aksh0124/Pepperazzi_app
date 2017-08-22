@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JSONTableViewController.h"
+//#import "JSONTableViewController.h"
+#import "SubTypeCuisineViewController.h"
 
 @interface TypeCuisineViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIButton *mexicanbtn;

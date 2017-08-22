@@ -7,9 +7,13 @@
 //
 
 #import "SubTypeCuisineViewController.h"
-#import "TypeCuisineViewController.h"
+
 
 @interface SubTypeCuisineViewController ()
+{
+       JSONTableViewController *jtvc;
+   // TypeCuisineViewController *tvc;
+}
 
 
 @end
@@ -33,11 +37,12 @@
 -(IBAction)souppressed:(id)sender
 {
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    JSONTableViewController *jtvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"TableView1"];
-    
+ jtvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"tableview1"];
+   //  jtvc.cuisinename = tvc.westernbtn.titleLabel.text;
+    jtvc.cuisinename =  _cuisinename1;
     jtvc.categoryname = self.soupbtn.titleLabel.text;
     NSLog(@"%@", jtvc.categoryname);
-    [self presentViewController:jtvc animated:YES completion:nil];
+   [self presentViewController:jtvc animated:NO completion:nil];
 }
 -(IBAction)saladpressed:(id)sender
 {

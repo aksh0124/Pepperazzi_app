@@ -14,14 +14,25 @@
 
 @implementation JSONTableViewController
 
+@synthesize cuisinename,categoryname;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+  /*  TypeCuisineViewController *tcvc;
+    SubTypeCuisineViewController *stcvc;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    tcvc.westernbtn = cuisinename;
+    stcvc.soupbtn = categoryname; */
+    
+    NSError *error;
+    NSString *url_string = [NSString stringWithFormat:@"http://anantsoftcomputing.com/pepperazzi_app/disheslist.php?format=json&cuisinename=%@&categoryname=%@",cuisinename,categoryname];
+ 
+    NSData *data1 = [NSData dataWithContentsOfURL:[NSURL URLWithString:url_string]];
+    NSMutableArray *JSON = [NSJSONSerialization JSONObjectWithData:data1 options:kNilOptions error:&error];
+
+    NSLog(@"json data are: %@",JSON);
+    
 }
 
 - (void)didReceiveMemoryWarning {

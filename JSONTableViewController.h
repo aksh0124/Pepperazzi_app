@@ -7,15 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TypeCuisineViewController.h"
+#import "SubTypeCuisineViewController.h"
 
-@interface JSONTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface JSONTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray *jsonarray;
 @property (nonatomic, strong) NSMutableArray *dishesarray;
 
 @property (strong, nonatomic) IBOutlet UITableView *dishestable;
 
-@property NSString *tablename;
+@property NSString *cuisinename;
 @property NSString *categoryname;
 
 @end

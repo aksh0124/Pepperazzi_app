@@ -10,7 +10,7 @@
 
 @interface TypeCuisineViewController ()
 {
-    UIButton *button;
+    SubTypeCuisineViewController *stcvc;
 }
 
 @end
@@ -37,11 +37,11 @@
 -(IBAction)mexicanpressed:(id)sender
 {
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    JSONTableViewController *jtvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"TableView1"];
+    stcvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"subtypecuisine"];
     
-    jtvc.tablename = self.mexicanbtn.titleLabel.text;
-    NSLog(@"%@", jtvc.tablename);
-    [self presentViewController:jtvc animated:YES completion:nil];
+    stcvc.cuisinename1 = self.mexicanbtn.titleLabel.text;
+    NSLog(@"%@", stcvc.cuisinename1);
+    [self presentViewController:stcvc animated:YES completion:nil];
 }
 
 -(IBAction)italianpressed:(id)sender
@@ -52,11 +52,11 @@
 -(IBAction)westernpressed:(id)sender
 {
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    JSONTableViewController *jtvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"TableView1"];
+    stcvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"subtypecuisine"];
     
-    jtvc.tablename = self.westernbtn.titleLabel.text;
-    NSLog(@"%@", jtvc.tablename);
-    [self presentViewController:jtvc animated:YES completion:nil];
+    stcvc.cuisinename1 = self.westernbtn.titleLabel.text;
+    NSLog(@"%@", stcvc.cuisinename1);
+    [self presentViewController:stcvc animated:YES completion:nil];
 }
 
 -(IBAction)indianpressed:(id)sender
@@ -72,6 +72,34 @@
 -(IBAction)lebanonpressed:(id)sender
 {
     
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"mexican_segue"])
+    {
+        stcvc = [segue destinationViewController];
+    }
+    if ([[segue identifier] isEqualToString:@"italian_segue"])
+    {
+        stcvc = [segue destinationViewController];
+    }
+    if ([[segue identifier] isEqualToString:@"western_segue"])
+    {
+        stcvc = [segue destinationViewController];
+    }
+    if ([[segue identifier] isEqualToString:@"indian_segue"])
+    {
+        stcvc = [segue destinationViewController];
+    }
+    if ([[segue identifier] isEqualToString:@"panasian_segue"])
+    {
+        stcvc = [segue destinationViewController];
+    }
+    if ([[segue identifier] isEqualToString:@"lebanon_segue"])
+    {
+        stcvc = [segue destinationViewController];
+    }
 }
 
 
