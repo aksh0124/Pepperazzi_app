@@ -19,13 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    TypeCuisineViewController *tcvc;
-    SubTypeCuisineViewController *stcvc;
+//    TypeCuisineViewController *tcvc;
+//    SubTypeCuisineViewController *stcvc;
     
   /*  tcvc.westernbtn = cuisinename;
     stcvc.soupbtn = categoryname; */
     
-    cuisinename = stcvc.cuisinename1;
+  //  cuisinename = stcvc.cuisinename1;
     
     
     NSLog(@"%@",cuisinename);
@@ -49,12 +49,12 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
+
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+
     return 0;
 }
 

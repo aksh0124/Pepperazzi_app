@@ -579,7 +579,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.91102295850000004" green="1" blue="0.76482346320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Pan Asian">
+                                <state key="normal" title="PanAsian">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -638,7 +638,7 @@
                                 </state>
                                 <connections>
                                     <action selector="souppressed:" destination="bkP-CG-D1x" eventType="touchUpInside" id="3vH-Za-kNv"/>
-                                    <segue destination="Lps-W8-DNQ" kind="show" identifier="soup_segue" id="ohy-bI-MDF"/>
+                                    <segue destination="aWX-qD-8Gh" kind="show" identifier="soup_segue" id="3hF-l5-qIo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWg-s5-swW">
@@ -651,7 +651,7 @@
                                 </state>
                                 <connections>
                                     <action selector="saladpressed:" destination="bkP-CG-D1x" eventType="touchUpInside" id="Ose-7w-bsn"/>
-                                    <segue destination="Lps-W8-DNQ" kind="show" identifier="salad_segue" id="gR7-dm-q6w"/>
+                                    <segue destination="aWX-qD-8Gh" kind="show" id="ykc-th-8ek"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnp-EW-p3v">
@@ -664,7 +664,7 @@
                                 </state>
                                 <connections>
                                     <action selector="starterpressed:" destination="bkP-CG-D1x" eventType="touchUpInside" id="vT0-k5-8ES"/>
-                                    <segue destination="Lps-W8-DNQ" kind="show" identifier="starter_segue" id="9fs-XI-iUp"/>
+                                    <segue destination="aWX-qD-8Gh" kind="show" identifier="starter_segue" id="vLO-R0-4fb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPr-zn-iM0">
@@ -677,7 +677,7 @@
                                 </state>
                                 <connections>
                                     <action selector="maincoursepressed:" destination="bkP-CG-D1x" eventType="touchUpInside" id="xyV-hY-I56"/>
-                                    <segue destination="Lps-W8-DNQ" kind="show" identifier="maincourse_segue" id="z5O-2Y-1qZ"/>
+                                    <segue destination="aWX-qD-8Gh" kind="show" identifier="maincourse_segue" id="SGM-dw-P1x"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -957,7 +957,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.91102295850000004" green="1" blue="0.76482346320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Soups">
+                                <state key="normal" title="Soup">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -966,7 +966,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.91102295850000004" green="1" blue="0.76482346320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Salads">
+                                <state key="normal" title="Salad">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -975,7 +975,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.91102295850000004" green="1" blue="0.76482346320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Starters">
+                                <state key="normal" title="Starter">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -1026,8 +1026,8 @@
         <image name="Image-veg" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="z5O-2Y-1qZ"/>
-        <segue reference="FSz-1T-q0J"/>
         <segue reference="DDQ-0f-i5R"/>
+        <segue reference="xw5-Io-JpL"/>
+        <segue reference="ykc-th-8ek"/>
     </inferredMetricsTieBreakers>
 </document>
