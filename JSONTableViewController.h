@@ -20,4 +20,6 @@
 @property NSString *cuisinename;
 @property NSString *categoryname;
 
+-(void) retriveData;
+
 @end

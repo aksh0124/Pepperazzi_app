@@ -7,6 +7,7 @@
 //
 
 #import "JSONTableViewController.h"
+#import "DishesList.h"
 
 @interface JSONTableViewController ()
 
@@ -14,7 +15,7 @@
 
 @implementation JSONTableViewController
 
-@synthesize cuisinename,categoryname;
+@synthesize cuisinename,categoryname,jsonarray,dishesarray;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,13 +32,18 @@
     NSLog(@"%@",cuisinename);
     NSLog(@"%@",categoryname);
     
-    NSError *error;
+    self.title = @"Dishes";
+    
+/*    NSError *error;
     NSString *url_string = [NSString stringWithFormat:@"http://anantsoftcomputing.com/pepperazzi_app/disheslist.php?format=json&cuisinename=%@&categoryname=%@",cuisinename,categoryname];
  
     NSData *data1 = [NSData dataWithContentsOfURL:[NSURL URLWithString:url_string]];
     NSMutableArray *JSON = [NSJSONSerialization JSONObjectWithData:data1 options:kNilOptions error:&error];
 
     NSLog(@"json data are: %@",JSON);
+    */
+    
+    [self retriveData];
     
 }
 
@@ -50,23 +56,31 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 0;
+    return dishesarray.count;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
     
+    DishesList *dishesObject;
+    dishesObject = [dishesarray objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = dishesObject.Item_Name;
+ //   cell.detailTextLabel.text = dishesObject.Item_Type;
+    
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -111,5 +125,30 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void) retriveData
+{
+    NSError *error;
+    NSString *url_string = [NSString stringWithFormat:@"http://anantsoftcomputing.com/pepperazzi_app/disheslist.php?format=json&cuisinename=%@&categoryname=%@",cuisinename,categoryname];
+    
+    NSData *data1 = [NSData dataWithContentsOfURL:[NSURL URLWithString:url_string]];
+   jsonarray = [NSJSONSerialization JSONObjectWithData:data1 options:kNilOptions error:&error];
+    
+    NSLog(@"json data are: %@",jsonarray);
+    
+    dishesarray = [[NSMutableArray alloc]init];
+    
+    for(int i=0; i<jsonarray.count; i++)
+    {
+        NSString *IName = [[jsonarray objectAtIndex:i] objectForKey:@"item_name"];
+        NSString *IType = [[jsonarray objectAtIndex:i] objectForKey:@"item_type"];
+        
+        [dishesarray addObject:[[DishesList alloc]initWithItem_Name:IName andItem_Type:IType]];
+    }
+        
+    [self.dishestable reloadData];
+    
+}
+
 
 @end
