@@ -20,10 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
- //   [self.mexicanbtn  setTitle:@"Mexican" forState:UIControlStateNormal];
- //   [self.westernbtn  setTitle:@"Western" forState:UIControlStateNormal];
-    
-    // Do any additional setup after loading the view.
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,6 +43,7 @@
         stcvc = [segue destinationViewController];
         stcvc.cuisinename1 = self.italianbtn.titleLabel.text;
         NSLog(@"%@", stcvc.cuisinename1);
+     //   [stcvc.saladbtn setUserInteractionEnabled:NO];
     }
     if ([[segue identifier] isEqualToString:@"western_segue"])
     {
@@ -86,15 +84,7 @@
 
 -(IBAction)westernpressed:(id)sender
 {
-    /* UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-     stcvc = [mainStoryboard instantiateViewControllerWithIdentifier:@"subtypecuisine"];
-     
-     stcvc.cuisinename1 = self.westernbtn.titleLabel.text;
-     NSLog(@"%@", stcvc.cuisinename1);
-     [self presentViewController:stcvc animated:YES completion:nil];*/
-    
-    //   stcvc.cuisinename1 = self.westernbtn.titleLabel.text;
-    
+   
 }
 
 -(IBAction)indianpressed:(id)sender

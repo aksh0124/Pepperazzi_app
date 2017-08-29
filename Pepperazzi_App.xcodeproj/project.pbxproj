@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C70B7AB61F485B130098590F /* JSONTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C70B7AB51F485B130098590F /* JSONTableViewController.m */; };
+		C70CCD1F1F553AB700F180B1 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C70CCD1E1F553AB700F180B1 /* CollectionViewCell.m */; };
 		C7659F3A1F4D8AA8009E2900 /* DishesList.m in Sources */ = {isa = PBXBuildFile; fileRef = C7659F391F4D8AA8009E2900 /* DishesList.m */; };
 		C771B8A71F44458C00DD65C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B8A61F44458C00DD65C6 /* main.m */; };
 		C771B8AA1F44458C00DD65C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C771B8A91F44458C00DD65C6 /* AppDelegate.m */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		C70B7AB41F485B130098590F /* JSONTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONTableViewController.h; path = ../JSONTableViewController.h; sourceTree = "<group>"; };
 		C70B7AB51F485B130098590F /* JSONTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONTableViewController.m; path = ../JSONTableViewController.m; sourceTree = "<group>"; };
+		C70CCD1D1F553AB700F180B1 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewCell.h; path = ../CollectionViewCell.h; sourceTree = "<group>"; };
+		C70CCD1E1F553AB700F180B1 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewCell.m; path = ../CollectionViewCell.m; sourceTree = "<group>"; };
 		C7659F381F4D8AA8009E2900 /* DishesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DishesList.h; path = ../DishesList.h; sourceTree = "<group>"; };
 		C7659F391F4D8AA8009E2900 /* DishesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DishesList.m; path = ../DishesList.m; sourceTree = "<group>"; };
 		C771B8A21F44458C00DD65C6 /* Pepperazzi_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pepperazzi_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +121,8 @@
 			children = (
 				C771B8A81F44458C00DD65C6 /* AppDelegate.h */,
 				C771B8A91F44458C00DD65C6 /* AppDelegate.m */,
+				C70CCD1D1F553AB700F180B1 /* CollectionViewCell.h */,
+				C70CCD1E1F553AB700F180B1 /* CollectionViewCell.m */,
 				C771B8AB1F44458C00DD65C6 /* ViewController.h */,
 				C771B8AC1F44458C00DD65C6 /* ViewController.m */,
 				C771B8AE1F44458C00DD65C6 /* Main.storyboard */,
@@ -303,6 +308,7 @@
 				C771B8AA1F44458C00DD65C6 /* AppDelegate.m in Sources */,
 				C70B7AB61F485B130098590F /* JSONTableViewController.m in Sources */,
 				C771B8A71F44458C00DD65C6 /* main.m in Sources */,
+				C70CCD1F1F553AB700F180B1 /* CollectionViewCell.m in Sources */,
 				C771B8DA1F445D2A00DD65C6 /* TypeCuisineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

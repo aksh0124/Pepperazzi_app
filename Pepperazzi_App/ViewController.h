@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CollectionViewCell.h"
+#import "TypeCuisineViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UICollectionViewDelegate, UICollectionViewDataSource>
 
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionview;
 
 @end
 
