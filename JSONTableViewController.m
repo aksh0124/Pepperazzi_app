@@ -54,13 +54,26 @@
     
     DishesList *dishesObject;
     dishesObject = [dishesarray objectAtIndex:indexPath.row];
-    
+   
     cell.textLabel.text = dishesObject.Item_Name;
     cell.detailTextLabel.text = dishesObject.Item_Type;
+
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ItemDetailViewController *idvc = [[ItemDetailViewController alloc]init];
+    
+    DishesList *detail = [dishesarray objectAtIndex:indexPath.row];
+    idvc.name = detail.Item_Name;
+    idvc.type = detail.Item_Type;
+    
+    [self.navigationController pushViewController:idvc animated:YES];
+    
+}
 
 -(void) retriveData
 {
@@ -68,6 +81,7 @@
     NSString *url_string = [NSString stringWithFormat:@"http://anantsoftcomputing.com/pepperazzi_app/disheslist.php?format=json&cuisinename=%@&categoryname=%@",cuisinename,categoryname];
     
     NSData *data1 = [NSData dataWithContentsOfURL:[NSURL URLWithString:url_string]];
+    
    jsonarray = [NSJSONSerialization JSONObjectWithData:data1 options:kNilOptions error:&error];
     
     NSLog(@"json data are: %@",jsonarray);

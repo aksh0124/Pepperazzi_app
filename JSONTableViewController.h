@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TypeCuisineViewController.h"
 #import "SubTypeCuisineViewController.h"
+#import "ItemDetailViewController.h"
 
 @interface JSONTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
@@ -21,5 +22,8 @@
 @property NSString *categoryname;
 
 -(void) retriveData;
+
+//@property (strong, nonatomic) IBOutlet UIStepper *stepper;
+
 
 @end
