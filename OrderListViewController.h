@@ -10,6 +10,10 @@
 
 @interface OrderListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property (strong, nonatomic) IBOutlet UITableView *table_view;
 
+@property NSMutableArray *name_arr;
+@property NSMutableArray *quan_arr;
+@property NSDictionary *dict;
 
 @end
